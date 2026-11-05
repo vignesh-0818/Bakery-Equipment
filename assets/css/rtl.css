@@ -1,0 +1,111 @@
+/* ==========================================================================
+   BakeTech Commercial Systems - RTL (Right-to-Left) Stylesheet
+   Activated when [dir="rtl"] is set on <html>
+   ========================================================================== */
+
+[dir="rtl"] {
+  text-align: right;
+  direction: rtl;
+}
+
+[dir="rtl"] body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Navbar Brand & Dropdown in RTL */
+[dir="rtl"] .navbar-brand {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .site-navbar .dropdown-menu {
+  text-align: right;
+}
+
+[dir="rtl"] .site-navbar .dropdown-item:hover {
+  transform: translateX(-3px);
+}
+
+/* Section Tag with line in RTL */
+[dir="rtl"] .section-tag::before {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+/* Search input group icon in RTL */
+[dir="rtl"] .search-input-group .form-control {
+  padding-right: 2.75rem;
+  padding-left: 0.95rem;
+}
+
+[dir="rtl"] .search-input-group .search-icon {
+  right: 1rem;
+  left: auto;
+}
+
+/* Stat Items in RTL */
+@media (min-width: 992px) {
+  [dir="rtl"] .stat-item {
+    border-right: none;
+    border-left: 1px solid var(--border-subtle);
+  }
+
+  [dir="rtl"] .stat-item:last-child {
+    border-left: none;
+  }
+}
+
+/* Table and specs lists in RTL */
+[dir="rtl"] .card-specs-list li {
+  flex-direction: row-reverse;
+}
+
+[dir="rtl"] .spec-val {
+  text-align: left;
+}
+
+[dir="rtl"] .spec-key {
+  text-align: right;
+}
+
+/* Arrow Icons Flip in RTL */
+[dir="rtl"] .bi-arrow-right,
+[dir="rtl"] .bi-chevron-right {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .bi-arrow-left,
+[dir="rtl"] .bi-chevron-left {
+  transform: scaleX(-1);
+}
+
+/* Blog TOC in RTL */
+[dir="rtl"] .blog-toc-list a:hover {
+  transform: translateX(-4px);
+}
+
+/* Floating button position in RTL */
+[dir="rtl"] .back-to-top-btn {
+  right: auto;
+  left: 1.75rem;
+}
+
+/* Breadcrumb in RTL */
+[dir="rtl"] .breadcrumb-item + .breadcrumb-item::before {
+  float: right;
+  padding-left: var(--bs-breadcrumb-item-padding-x);
+  padding-right: 0;
+}
+
+/* Commercial Phone Number Input & Placeholder in RTL */
+[dir="rtl"] input[type="tel"] {
+  direction: ltr !important;
+  text-align: right !important;
+  unicode-bidi: plaintext !important;
+}
+
+[dir="rtl"] input[type="tel"]::placeholder {
+  direction: ltr !important;
+  text-align: right !important;
+  unicode-bidi: plaintext !important;
+}
+

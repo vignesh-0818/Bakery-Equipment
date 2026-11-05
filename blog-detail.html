@@ -1,0 +1,573 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-bs-theme="light" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="blogPageTitle">Commercial Bakery Insights | BakeTech Commercial Systems</title>
+  <meta name="description" content="In-depth commercial bakery engineering articles, oven comparisons, maintenance procedures, and equipment sizing guides from BakeTech Commercial Systems.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23C87D32'/><path d='M8 10h16v12H8z' fill='none' stroke='white' stroke-width='2'/><path d='M11 15h10M11 18h6' stroke='white' stroke-width='2' stroke-linecap='round'/></svg>">
+
+  <!-- Local Vendor CSS -->
+  <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+
+  <!-- Custom Core & RTL Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+</head>
+<body>
+
+  <!-- Global Master Navigation Bar -->
+  <nav class="navbar navbar-expand-lg site-navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <div class="brand-icon-box">
+          <i class="bi bi-fire"></i>
+        </div>
+        <div class="brand-text"><span class="brand-title">BAKETECH</span><span class="brand-subtitle">Commercial Systems</span></div>
+      </a>
+
+      <!-- Mobile Controls (Theme, RTL, Hamburger) -->
+      <div class="d-flex align-items-center gap-2 d-lg-none">
+        <button class="btn btn-utility theme-toggle-btn" aria-label="Toggle theme">
+          <i class="bi bi-moon-stars-fill theme-toggle-icon"></i>
+        </button>
+        <button class="btn btn-utility rtl-toggle-btn" aria-label="Toggle RTL direction">
+          <span class="rtl-label fw-bold small">RTL</span>
+        </button>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index.html"><i class="bi bi-layout-text-window-reverse me-2 text-copper"></i> Home 1: Commercial Equipment</a></li>
+              <li><a class="dropdown-item" href="home-solutions.html"><i class="bi bi-grid-1x2-fill me-2 text-copper"></i> Home 2: Solutions & Industry</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="financing.html">Financing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <!-- Right Utilities & Quote CTA -->
+        <div class="d-none d-lg-flex align-items-center gap-2">
+          <button class="btn btn-utility theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle Theme">
+            <i class="bi bi-moon-stars-fill theme-toggle-icon"></i>
+          </button>
+          <button class="btn btn-utility rtl-toggle-btn" aria-label="Toggle RTL layout" title="Toggle RTL">
+            <span class="rtl-label fw-bold small">RTL</span>
+          </button>
+          <button type="button" class="btn btn-copper ms-2" data-bs-toggle="modal" data-bs-target="#quoteModal">
+            <i class="bi bi-clipboard-check me-1"></i> Request a Quote
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero (Clearly Visible Hero Image with Center-Aligned Content) -->
+  <section class="page-hero">
+    <img src="assets/images/hero/hero-blog-detail.jpg" alt="Commercial Bakery Technical Guides & Insights" class="page-hero-bg">
+    <div class="container text-center">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mb-2 small justify-content-center">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="blog.html">Technical Guides</a></li>
+          <li class="breadcrumb-item active text-white" aria-current="page" id="heroArticleCategory">Bakery Engineering</li>
+        </ol>
+      </nav>
+      <h1 class="display-4 fw-bold text-white mb-2" id="heroArticleTitle">Deck Oven vs Convection Oven: Complete Performance & Crust Comparison</h1>
+      <p class="lead text-light text-opacity-90 mb-0 mx-auto max-w-700" id="heroArticleSubtitle">
+        Engineering deep dives, machinery selection strategies, preventive maintenance protocols, and industrial bakery case studies.
+      </p>
+    </div>
+  </section>
+
+  <!-- Article Content Section -->
+  <article class="py-5">
+    <div class="container">
+      
+      <!-- Article Header -->
+      <div class="max-w-800 mx-auto text-center mb-4">
+        <span class="badge-copper mb-2" id="articleCategoryBadge">Oven Technology</span>
+        <h1 class="display-5 fw-bold mb-3" id="articleTitle">Deck Oven vs Convection Oven: Complete Performance & Crust Comparison</h1>
+        
+        <div class="d-flex justify-content-center align-items-center flex-wrap gap-3 text-muted small mb-4">
+          <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-person-fill text-copper"></i>
+            <span id="articleAuthorName" class="fw-bold">Marcus Vance</span>
+          </div>
+          <span>•</span>
+          <div><i class="bi bi-calendar3 text-copper me-1"></i><span id="articleDate">October 18, 2026</span></div>
+          <span>•</span>
+          <div><i class="bi bi-clock text-copper me-1"></i><span id="articleReadTime">8 min read</span></div>
+        </div>
+      </div>
+
+      <!-- Featured Hero Image -->
+      <div class="max-w-900 mx-auto mb-5">
+        <div class="rounded-4 overflow-hidden shadow-lg border border-subtle" style="max-height: 480px;">
+          <img id="articleFeaturedImg" src="assets/images/blog/blog-2-deck-vs-convection.jpg" alt="Commercial Bakery Article" class="w-100 h-100 object-fit-cover">
+        </div>
+      </div>
+
+      <!-- Article Body with Sticky Table of Contents Layout -->
+      <div class="row g-5">
+        
+        <!-- Left Sticky TOC Sidebar -->
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="blog-toc-card">
+            <h6 class="fw-bold text-uppercase small text-copper mb-3">
+              <i class="bi bi-list-nested me-1"></i> Table of Contents
+            </h6>
+            <ul class="blog-toc-list" id="articleTocList">
+              <li><a href="#thermal-diff">1. Radiant Stone vs Convective Air</a></li>
+              <li><a href="#crust-steam">2. Crust Formation & Steam Injection</a></li>
+              <li><a href="#capacity-loading">3. Production Capacity & Loading</a></li>
+              <li><a href="#comparison-matrix">4. Equipment Comparison Matrix</a></li>
+              <li><a href="#operating-costs">5. Operating Costs & Utilities</a></li>
+              <li><a href="#verdict">6. Selecting for Your Bakery</a></li>
+            </ul>
+
+            <div class="mt-4 pt-3 border-top border-subtle">
+              <h6 class="fw-bold small mb-2">Need Equipment Guidance?</h6>
+              <p class="small text-muted mb-3">Speak with our commercial oven engineers regarding sizing and utility layout.</p>
+              <button type="button" class="btn btn-sm btn-copper w-100" data-bs-toggle="modal" data-bs-target="#quoteModal">
+                Inquire with Specialist
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Article Content Column -->
+        <div class="col-lg-8">
+          <div class="article-content" id="articleBodyContent">
+            <!-- Dynamically populated from blog-data.js -->
+          </div>
+
+          <!-- Supporting Images Carousel / Grid (Unique Supporting Imagery) -->
+          <div class="row g-3 my-4">
+            <div class="col-sm-6">
+              <div class="rounded-3 overflow-hidden border border-subtle shadow-sm">
+                <img src="assets/images/blog/blog-detail-internal-1.jpg" alt="Commercial Stone Hearth Oven Spring in Sourdough" class="w-100 object-fit-cover" style="height: 220px;">
+                <div class="p-2 bg-surface small text-muted text-center">Refractory stone contact heat produces explosive oven spring.</div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="rounded-3 overflow-hidden border border-subtle shadow-sm">
+                <img src="assets/images/blog/blog-detail-internal-2.jpg" alt="Commercial Convection Oven Air Circulation Chamber" class="w-100 object-fit-cover" style="height: 220px;">
+                <div class="p-2 bg-surface small text-muted text-center">Forced bi-directional convection delivers uniform croissant lamination.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Author Biography Box -->
+          <div class="p-4 rounded-4 bg-surface-alt border border-subtle mt-5 d-flex flex-column flex-sm-row gap-4 align-items-center">
+            <div class="brand-icon-box flex-shrink-0" style="width: 72px; height: 72px; font-size: 2rem;">
+              <i class="bi bi-person-fill"></i>
+            </div>
+            <div>
+              <h5 class="fw-bold mb-1" id="authorBioName">Marcus Vance</h5>
+              <small class="text-copper fw-bold d-block mb-2" id="authorBioRole">Master Baker & Technical Director</small>
+              <p class="small text-muted mb-0" id="authorBioDescription">
+                Marcus has over 24 years of commercial bakery engineering experience. He advises wholesale facilities, hotel culinary departments, and artisan sourdough operations on equipment thermodynamics and line efficiency.
+              </p>
+            </div>
+          </div>
+
+          <!-- Back to Blog Button -->
+          <div class="mt-4 pt-3 border-top border-subtle d-flex justify-content-between align-items-center">
+            <a href="blog.html" class="btn btn-outline-secondary">
+              <i class="bi bi-arrow-left me-1"></i> Back to All Articles
+            </a>
+            <button type="button" class="btn btn-copper" data-bs-toggle="modal" data-bs-target="#quoteModal">
+              Request Oven Consultation
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Related Articles Section -->
+      <div class="mt-5 pt-5 border-top border-subtle">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <div>
+            <div class="section-tag">Continue Reading</div>
+            <h3 class="fw-bold mb-0">Related Commercial Guides</h3>
+          </div>
+          <a href="blog.html" class="btn btn-outline-secondary btn-sm">All Articles <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="row g-4" id="relatedArticlesGrid">
+          <!-- Dynamically populated from blog-data.js -->
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Col 1: Brand & Contact -->
+        <div class="col-lg-4">
+          <a href="index.html" class="d-inline-flex align-items-center gap-2 mb-3 text-decoration-none">
+            <div class="brand-icon-box">
+              <i class="bi bi-fire"></i>
+            </div>
+            <div class="brand-text"><span class="brand-title text-white">BAKETECH</span><span class="brand-subtitle">Commercial Systems</span></div>
+          </a>
+          <p class="small footer-desc mb-3">
+            Authorized commercial dealer and engineering partner supplying industrial ovens, heavy-duty mixers, dough processing machinery, and turnkey bakery installations across North America.
+          </p>
+          <div class="d-flex flex-column gap-2 small mb-3">
+            <div><i class="bi bi-geo-alt-fill text-copper me-2"></i> 4850 Industrial Parkway, Suite 200, Chicago, IL 60638</div>
+            <div><i class="bi bi-telephone-fill text-copper me-2"></i> Toll-Free: +1 (800) 555-BAKE (2253)</div>
+            <div><i class="bi bi-envelope-fill text-copper me-2"></i> sales@baketechsystems.com</div>
+          </div>
+          <!-- Verified Social Media Links -->
+          <div class="d-flex gap-2 pt-1">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram" title="Follow BakeTech on Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="X (Twitter)" title="Follow BakeTech on X">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook" title="Follow BakeTech on Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="YouTube" title="Subscribe to BakeTech on YouTube">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Equipment Categories -->
+        <div class="col-sm-6 col-lg-2">
+          <h5>Equipment</h5>
+          <ul class="footer-links">
+            <li><a href="products.html?cat=deck-ovens">Deck Ovens</a></li>
+            <li><a href="products.html?cat=rotary-rack-ovens">Rotary Rack Ovens</a></li>
+            <li><a href="products.html?cat=convection-ovens">Convection Ovens</a></li>
+            <li><a href="products.html?cat=spiral-mixers">Spiral Mixers</a></li>
+            <li><a href="products.html?cat=planetary-mixers">Planetary Mixers</a></li>
+            <li><a href="products.html?cat=dough-sheeters">Dough Sheeters</a></li>
+            <li><a href="products.html?cat=proofers-retarders">Proofers & Retarders</a></li>
+            <li><a href="products.html?cat=industrial-equipment">Industrial Lines</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Industry Solutions & Services -->
+        <div class="col-sm-6 col-lg-3">
+          <h5>Solutions & Support</h5>
+          <ul class="footer-links">
+            <li><a href="home-solutions.html#artisan">Artisan Sourdough Bakeries</a></li>
+            <li><a href="home-solutions.html#wholesale">Wholesale & Factory Bakeries</a></li>
+            <li><a href="home-solutions.html#hotel">Hotel & Resort Kitchens</a></li>
+            <li><a href="home-solutions.html#cafe">Cafes & Pastry Boutiques</a></li>
+            <li><a href="financing.html">Commercial Equipment Leasing</a></li>
+            <li><a href="about.html#service">Turnkey Rigging & Installation</a></li>
+            <li><a href="contact.html#support">24/7 OEM Parts Dispatch</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Newsletter & Showroom Hours -->
+        <div class="col-lg-3">
+          <h5>Dealer Bulletin</h5>
+          <p class="small footer-desc mb-3">
+            Subscribe for quarterly equipment release notices, Section 179 tax update alerts, and commercial technical guides.
+          </p>
+          <form class="needs-validation mb-3" novalidate>
+            <div class="input-group">
+              <input type="email" class="form-control form-control-sm email-format-input" placeholder="Your business email" required>
+              <button class="btn btn-copper btn-sm" type="submit">Join</button>
+            </div>
+          </form>
+          <div class="showroom-hours small">
+            <strong>Showroom Hours (CST):</strong><br>
+            Mon - Fri: 7:30 AM - 6:00 PM<br>
+            Sat: 8:00 AM - 1:00 PM (Appt Only)<br>
+            <span class="emergency-parts-line"><i class="bi bi-clock-history me-1"></i>24/7 Emergency Parts Line Active</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <div>
+          &copy; <span class="current-year">2026</span> BakeTech Commercial Systems LLC. All rights reserved. Customer-Facing Commercial Portal.
+        </div>
+        <div class="d-flex flex-wrap gap-3 footer-legal-links">
+          <a href="about.html">About Dealership</a>
+          <a href="financing.html">Financing Terms</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quick Quote Request Modal (Global) -->
+  <div class="modal fade" id="quoteModal" tabindex="-1" aria-labelledby="quoteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-surface border border-subtle">
+        <div class="modal-header border-bottom border-subtle">
+          <div class="d-flex align-items-center gap-2">
+            <div class="brand-icon-box" style="width: 32px; height: 32px; font-size: 0.9rem;">
+              <i class="bi bi-file-earmark-text"></i>
+            </div>
+            <div>
+              <h5 class="modal-title fw-bold mb-0" id="quoteModalLabel">Request Commercial Equipment Quote</h5>
+              <small class="text-muted">Direct B2B dealer pricing & utility compatibility assessment</small>
+            </div>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form class="needs-validation" novalidate id="globalQuoteForm">
+          <div class="modal-body p-4">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Full Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control name-only-input" name="fullName" placeholder="e.g. Marcus Vance" pattern="^[A-Za-z\s\.\'\-]{2,50}$" title="Name must only contain letters" required>
+                <div class="invalid-feedback">Please enter your full name (letters only).</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Bakery / Company Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" placeholder="e.g. Vance Artisan Sourdough Co." required>
+                <div class="invalid-feedback">Please provide your business name.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Business Email <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" placeholder="marcus@vancebakery.com" required>
+                <div class="invalid-feedback">Please provide a valid business email.</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Commercial Phone <span class="text-danger">*</span></label>
+                <input type="tel" class="form-control phone-numbers-only-input" name="phone" placeholder="(312) 555-0199" pattern="^[\d\s+\-\(\)]{7,25}$" title="Phone must only contain numbers" required>
+                <div class="invalid-feedback">Please provide a valid phone number (digits only).</div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Equipment Category or Model</label>
+                <select class="form-select" id="quoteEquipmentSelect">
+                  <option value="deck-ovens">Commercial Deck Ovens (Modular Stone)</option>
+                  <option value="rotary-rack-ovens">Industrial Rotary Rack Ovens</option>
+                  <option value="convection-ovens">Commercial Convection Ovens</option>
+                  <option value="spiral-mixers">Heavy-Duty Spiral Dough Mixers</option>
+                  <option value="planetary-mixers">Planetary Mixers (Pastry & Batters)</option>
+                  <option value="dough-sheeters">Automated Dough Sheeters</option>
+                  <option value="dough-dividers">Dough Dividers & Rounders</option>
+                  <option value="proofers-retarders">Dough Proofers & Retarders</option>
+                  <option value="bread-slicers">Commercial Bread Slicers</option>
+                  <option value="display-cabinets">Bakery Display Showcases</option>
+                  <option value="industrial-equipment">Complete Industrial Bakery Lines</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Business Facility Type</label>
+                <select class="form-select">
+                  <option>Artisan Retail Bakehouse</option>
+                  <option>High-Volume Wholesale Bakery</option>
+                  <option>Hotel / Resort Central Kitchen</option>
+                  <option>Specialty Cafe / Patisserie</option>
+                  <option>Industrial Dough / Food Plant</option>
+                  <option>New Commercial Bakery (Startup)</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Estimated Purchase Timeline</label>
+                <select class="form-select">
+                  <option>Immediate (Ready to Order 1-2 Weeks)</option>
+                  <option>Planning 30 - 60 Days</option>
+                  <option>Q1/Q2 Upcoming Budget</option>
+                  <option>Budgetary Estimate / Blueprint Planning</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Commercial Financing / Lease Interest?</label>
+                <select class="form-select">
+                  <option>Yes, send $1 Buyout Lease options</option>
+                  <option>Yes, send FMV Fair Market Value Lease options</option>
+                  <option>Direct Capital Outright Purchase</option>
+                  <option>Undecided / Reviewing options</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Project Details & Daily Output Capacity</label>
+                <textarea class="form-control" rows="3" placeholder="Tell us about your production goals (e.g., 500 baguettes/day, electrical 208V 3-phase available, need delivery by next month)..."></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer border-top border-subtle">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="submit" class="btn btn-copper px-4">
+              <i class="bi bi-send-fill me-1"></i> Submit Quote Request
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Submission Feedback Modal -->
+  <div class="modal fade" id="submissionFeedbackModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-surface border border-subtle">
+        <div class="modal-body text-center p-4">
+          <div class="brand-icon-box mx-auto mb-3" style="width: 56px; height: 56px; font-size: 1.75rem;">
+            <i class="bi bi-check-lg"></i>
+          </div>
+          <h4 class="fw-bold mb-2">Inquiry Confirmed (Demo Mode)</h4>
+          <p class="text-muted mb-3">
+            Your commercial equipment request has been successfully validated.
+          </p>
+          <div class="p-3 bg-surface-alt rounded-3 border border-subtle text-start small mb-3">
+            <div class="d-flex justify-content-between mb-1">
+              <span class="text-muted">Inquiry Reference:</span>
+              <strong id="feedbackRefNumber" class="text-copper">BK-847291</strong>
+            </div>
+            <div class="d-flex justify-content-between mb-1">
+              <span class="text-muted">Assigned Hub:</span>
+              <span>Midwest Engineering Dispatch</span>
+            </div>
+            <div class="d-flex justify-content-between">
+              <span class="text-muted">Status:</span>
+              <span class="badge bg-success">Ready for Sales Review</span>
+            </div>
+          </div>
+          <p class="small text-muted mb-4">
+            <em>Note: In a production deployment, this submission dispatches directly to BakeTech Sales Engineering with full CAD specifications and technical quote sheets.</em>
+          </p>
+          <button type="button" class="btn btn-copper px-4" data-bs-dismiss="modal">Close Window</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Local Vendor JS -->
+  <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+
+  <!-- Application Scripts -->
+  <script src="assets/js/products-data.js"></script>
+  <script src="assets/js/blog-data.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Dynamic Blog Detail Population Script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const articleId = urlParams.get('id') || 'deck-vs-convection';
+      const article = getBlogArticleById(articleId);
+
+      if (!article) return;
+
+      // Update Page Title
+      document.title = `${article.title} | BakeTech Commercial Systems`;
+
+      // Update Hero Banner Elements
+      const heroTitle = document.getElementById('heroArticleTitle');
+      if (heroTitle) heroTitle.textContent = article.title;
+      const heroCategory = document.getElementById('heroArticleCategory');
+      if (heroCategory) heroCategory.textContent = article.category;
+      const heroTag = document.getElementById('heroArticleTag');
+      if (heroTag) heroTag.textContent = `${article.category} Analysis`;
+
+      // Update Header Elements
+      const bcTitle = document.getElementById('articleBreadcrumbTitle');
+      if (bcTitle) bcTitle.textContent = article.title;
+      document.getElementById('articleTitle').textContent = article.title;
+      document.getElementById('articleCategoryBadge').textContent = article.category;
+      document.getElementById('articleAuthorName').textContent = article.author;
+      document.getElementById('articleDate').textContent = article.date;
+      document.getElementById('articleReadTime').textContent = article.readTime;
+      
+      const featuredImg = document.getElementById('articleFeaturedImg');
+      featuredImg.src = article.image;
+      featuredImg.alt = article.title;
+
+      // Update Author Bio Section
+      document.getElementById('authorBioName').textContent = article.author;
+      document.getElementById('authorBioRole').textContent = article.authorRole;
+
+      // Update Article Body Content
+      const bodyContainer = document.getElementById('articleBodyContent');
+      bodyContainer.innerHTML = article.content;
+
+      // Generate Dynamic TOC from H2 Headings
+      const h2Elements = bodyContainer.querySelectorAll('h2');
+      const tocList = document.getElementById('articleTocList');
+      if (h2Elements.length > 0) {
+        tocList.innerHTML = Array.from(h2Elements).map((h2, idx) => {
+          const anchorId = 'section-' + (idx + 1);
+          h2.id = anchorId;
+          return `<li><a href="#${anchorId}">${h2.textContent}</a></li>`;
+        }).join('');
+      }
+
+      // Populate Related Articles
+      const relatedGrid = document.getElementById('relatedArticlesGrid');
+      if (relatedGrid) {
+        const related = getRelatedBlogArticles(article.id, 3);
+        relatedGrid.innerHTML = related.map(rel => `
+          <div class="col-md-4">
+            <div class="card-custom">
+              <div class="card-img-wrapper">
+                <img src="${rel.image}" alt="${rel.title}" loading="lazy">
+              </div>
+              <div class="card-body-custom">
+                <span class="badge-copper mb-2 align-self-start">${rel.category}</span>
+                <h6 class="fw-bold mb-2">
+                  <a href="blog-detail.html?id=${rel.id}" class="text-decoration-none text-main">
+                    ${rel.title}
+                  </a>
+                </h6>
+                <p class="small text-muted mb-3 flex-grow-1">${rel.summary.slice(0, 85)}...</p>
+                <div class="d-flex justify-content-between align-items-center pt-2 border-top border-subtle mt-auto">
+                  <small class="text-muted">${rel.readTime}</small>
+                  <a href="blog-detail.html?id=${rel.id}" class="text-copper fw-bold small text-decoration-none">
+                    Read Guide <i class="bi bi-arrow-right ms-1"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      // Re-initialize modal
+      initQuoteModal();
+    });
+  </script>
+</body>
+</html>
+
+
+
