@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-bs-theme="light" dir="ltr">
 <head>
   <meta charset="UTF-8">
@@ -99,7 +99,7 @@
         </ol>
       </nav>
       <h1 class="display-4 fw-bold text-white mb-3">Commercial Bakery Equipment Catalogue</h1>
-      <p class="lead text-light text-opacity-90 mb-0 mx-auto max-w-700">
+      <p class="lead text-white fw-medium mb-0 mx-auto max-w-700">
         Engineered for professional bakeries, food plants, and hotels. Browse our complete inventory of industrial ovens, spiral mixers, dough sheeters, dividers, and proofers with authentic factory specifications.
       </p>
     </div>
@@ -630,12 +630,12 @@
           }).join('');
 
           const appsHtml = (product.applications || []).slice(0, 3).map(app => 
-            `<span class="badge bg-body-tertiary text-secondary border border-subtle small me-1 mb-1">${app}</span>`
+            `<span class="badge bg-body-tertiary text-secondary border border-subtle small">${app}</span>`
           ).join('');
 
           return `
-            <div class="col-md-6 col-lg-4 col-xl-3 d-flex align-items-stretch">
-              <div class="card-custom w-100 d-flex flex-column">
+            <div class="col-md-6 col-lg-4 col-xl-3 d-flex flex-column align-items-stretch">
+              <div class="card-custom w-100 h-100 d-flex flex-column">
                 <div class="card-img-wrapper">
                   ${product.badge ? `<span class="badge bg-danger card-badge-top">${product.badge}</span>` : ''}
                   <img src="${product.image}" alt="${product.name}" loading="lazy">
@@ -643,7 +643,7 @@
                 <div class="card-body-custom d-flex flex-column flex-grow-1">
                   <span class="badge-copper mb-2 align-self-start">${product.categoryName}</span>
                   <h5 class="fw-bold mb-1 fs-6 text-main" title="${product.name}">${product.name}</h5>
-                  <p class="small text-muted mb-2">${product.shortDesc}</p>
+                  <p class="small text-muted mb-2 card-desc">${product.shortDesc}</p>
                   
                   <div class="card-badge-container">
                     ${appsHtml}
@@ -653,7 +653,7 @@
                     ${specsHtml}
                   </ul>
 
-                  <div class="card-btn-row mt-auto d-flex gap-2">
+                  <div class="card-btn-row d-flex gap-2">
                     <a href="product-detail.html?id=${product.id}" class="btn btn-sm btn-outline-secondary flex-grow-1 text-center">
                       View Details
                     </a>
